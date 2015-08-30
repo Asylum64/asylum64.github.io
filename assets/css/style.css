@@ -1,0 +1,25 @@
+.navbar {
+	border-bottom: 1px solid #AAA !important;
+}
+.link {
+	color: #6A6;
+}
+.link:hover {
+	color: #5C5;
+}
+.link:visited {
+	color: #6A6;
+}
+.icon-bar {
+    background-color: #777;
+}
+
+
+/*classe de debug*/
+.red {
+	background-color: red !important;
+}
+
+.blue {
+	background-color: blue !important;
+}

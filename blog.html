@@ -1,9 +1,15 @@
 ---
-layout: home
+layout: default
 ---
-<h2>BLog</h2>
 
+<div class="content">
+<div class="container">
+<h2>Blog</h2>
+<br><br>
 {% for post in site.posts %}
-  <p class="post">{{ post.date | date: "%Y-%m-%d" }} - <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> ({{ post.language }})</p>
+  <p class="post">{{ post.date | date: "%Y-%m-%d" }} - <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
   <div class="post-excerpt">{{ post.excerpt }}</div>
+  <hr>
 {% endfor %}
+</div>
+</div>

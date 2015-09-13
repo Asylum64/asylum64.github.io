@@ -1,3 +1,19 @@
 ---
 layout: default
 ---
+
+<div class="content">
+	<div class="container">
+		<h2>Blog</h2>
+		<br>
+		<br>
+		<div class="col-lg-9">
+		<div class="article">
+			{% for post in site.posts %}
+			<p class="post">{{ post.date | date: "%Y-%m-%d" }} - <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+  			<div class="post-excerpt">{{ post.excerpt }}</div>
+  			<hr>
+			{% endfor %}
+		</div>
+	</div>
+</div>

@@ -5,7 +5,8 @@
 	font-family: "Yanone Kaffeesatz", "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
 }
 #compte_a_rebours {
-	color: #77F;
+	font-size: 2vw;
+	color: #7CF;
 	text-align: center;
 }
 h1, h2, h3 {

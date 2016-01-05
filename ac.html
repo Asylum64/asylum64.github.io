@@ -19,13 +19,9 @@ function compte_a_rebours()
 	var date_evenement = new Date("Mar 31 00:00:00 2016");
 	var total_secondes = (date_evenement - date_actuelle) / 1000;
 
-	var prefixe = "Compte à rebours terminé dans ";
 	if (total_secondes < 0)
 	{
-		prefixe = "Compte à rebours terminé il y a "; // On modifie le préfixe si la différence est négatif
-
-		total_secondes = Math.abs(total_secondes); // On ne garde que la valeur absolue
-
+		compte_a_rebours.innerHTML = 'AC is coming.';
 	}
 
 	if (total_secondes > 0)
@@ -87,7 +83,7 @@ function compte_a_rebours()
 			et = "";
 		}
 
-		compte_a_rebours.innerHTML = prefixe + jours + ' ' + mot_jour + ' ' + heures + ' ' + mot_heure + ' ' + minutes + ' ' + mot_minute + ' ' + et + ' ' + secondes + ' ' + mot_seconde;
+		compte_a_rebours.innerHTML = jours + ' ' + mot_jour + ' ' + heures + ' ' + mot_heure + ' ' + minutes + ' ' + mot_minute + ' ' + et + ' ' + secondes + ' ' + mot_seconde;
 	}
 	else
 	{

@@ -88,16 +88,43 @@ body {
 h2 {
 	color: #BBB !important ;
 }
+.article-head {
+	height: 250px;
+	width: 100%;
+	overflow: hidden;
+}
 .article {
 	background-color: white;
-	padding: 20px;
 	border-bottom: 5px solid #66E;
+	border-radius: 2px;
+	margin: 0 30px 20px 0;
+	box-shadow: 3px 2px 2px #333;
 }
-.about {
+.block-infos-head {
+	width: 100%;
+	height: 400px;
+	background-image: url('../img/night.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 2px 2px 0 0;
+}
+.block-infos {
 	background-color: white;
-	border-bottom: 5px solid #5C5;
-	padding: 20px;
+	border-radius: 2px;
+	box-shadow: 3px 2px 2px #333;
 }
+.block-infos-photo {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	background-color: white;
+	border-radius: 50%;
+	margin-top: -50px;
+}
+.block-infos-text {
+	padding-bottom: 20px;
+}
+
 .col-lg-9 {
 	padding-left: 0px;
 }
@@ -117,7 +144,7 @@ header {
 	background-color: #FFF;
 }
 .content {
-	margin-top: 70px;
+	margin-top: 30px;
 }
 
 /*classe de debug*/
@@ -132,5 +159,20 @@ header {
 	float: right;
 }
 .post {
-	margin-top: 60px;
+	margin-top: 15px;
+	font-size: 1.8em;
+}
+
+.article-full {
+	background-color: white;
+	padding: 20px;
+}
+.article-full p {
+	font-size: 16px;
+}
+
+p {
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 15px;
 }

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "First article"
+title:  "Python"
 head:   "assets/img/solar.png"
 date:   2016-04-02 12:32:46
 categories: Test

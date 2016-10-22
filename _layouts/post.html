@@ -1,41 +1,29 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-  {% include head.html %}
-
-  <body>
-  	<div class="content">
+<div class="content">
     <div class="container">
-  	<a href="/"><h2>Blog</h2></a>
-  	<br>
-	<br>
-    <div class="col-md-8 article-full">
-	  <header class="post-header">
-	    <h1 class="post-title">{{ page.title }}</h1>
-	    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-	  </header>
-
-	  <article class="post-content">
-	    {{ content }}
-	  </article>
-	</div>
-
-	<div class="col-md-4">
-		<div class="block-infos">
-			<div class="block-infos-head"></div>
-			<div class="block-infos-photo"></div>
-			<p class="block-infos-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-	</div>
-
-	</div>
-	</div>
-  </body>
-</html>
-
-
+        <a href="/"><h2>Blog</h2></a>
+        <br>
+        <br>
+        <div class="col-md-8">
+        	<div class="article-full">
+	            <header class="post-header">
+	                <h1 class="post-title">{{ page.title }}</h1>
+	                <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+	            </header>
+	            <article class="post-content">
+	                {{ content }}
+	            </article>
+	        </div>
+        </div>
+        <div class="col-md-4">
+            <div class="block-infos">
+                <div class="block-infos-head"></div>
+                <div class="block-infos-photo"></div>
+                <p class="block-infos-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+</div>

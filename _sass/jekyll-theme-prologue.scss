@@ -134,7 +134,7 @@
 		outline: 0;
 
 		&:hover {
-			color: #E27689;
+			color: #1abc9c;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 	}
@@ -248,7 +248,7 @@
 		&.avatar48 {
 			width: 48px;
 			height: 48px;
-			background: #f00;
+			background: #16a085;
 
 			img {
 				width: 48px;
@@ -600,7 +600,7 @@
 						color: #fff;
 
 						span::before {
-							color: #e27689;
+							color: #16a085;
 						}
 					}
 				}

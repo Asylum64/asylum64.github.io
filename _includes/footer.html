@@ -1,8 +1,13 @@
-<div class="footer" id="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
-	<div class="container1 clearfix">
-		<div class="go-top">
-			<a href="#"><i class="fa fa-angle-up"></i></a>
-		</div>
-		<p>Created By <a href="http://www.soratemplates.com/" id="mycontent" title=" Blogger Templates">Sora Templates</a>
-	</p>
+<!-- Footer -->
+<div id="footer">
+  
+  <!-- Copyright -->
+  <ul class="copyright">
+    {% if site.title or site.author %}
+      <li>&copy; {{- site.title | default: site.author -}}. All rights reserved.</li>
+    {% endif %}
+    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    <li>Jekyll integration: <a href="https://chrisbobbe.github.io/">Chris Bobbe</a></li>
+  </ul>
+  
 </div>

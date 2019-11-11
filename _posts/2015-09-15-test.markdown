@@ -1,7 +1,0 @@
----
-layout: post
-title:  "C"
-date:   2015-08-30 19:32:46
-categories: test
----
-Ceci est un petit test de post
